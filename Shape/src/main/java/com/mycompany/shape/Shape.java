@@ -5,17 +5,23 @@
  */
 package com.mycompany.shape;
 
-/**
- *
- * @author kirby
- */
 public class Shape {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    
+    private String name;
+    
+    public Shape(String name) {
+        this.name = name;
+    }/** returns the name of the shape */
+    
+    public String getName() {
+        return name;
+    }
+    /** returns the area of the shape */
+    public double getArea() {
+        return 0.0;
     }
     
+    public void printDimensions(){
+        System.out.println("No Dimensions");
+    }
 }
